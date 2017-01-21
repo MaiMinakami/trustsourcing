@@ -1,0 +1,66 @@
+.switch { 
+    width:100px;
+    height:100px;
+    padding:5px;
+    text-align:center;
+    border-radius:4px;
+    position:fixed;
+    bottom:0;
+    background:$pink;
+
+      &__title{
+        font-size: 24px;
+        color:white;
+      }
+
+      &__checkbox {
+        vertical-align: top;
+        margin: 0 3px 0 0;
+        width: 37px;
+        height: 17px;
+      }
+
+      &__checkbox + label {
+        cursor: pointer;
+      }
+
+      &__checkbox:not(checked) {
+        position: absolute;
+        opacity: 0;
+      }
+
+      &__checkbox:not(checked) + label {
+        position: relative; 
+        padding: 0 0 0 60px;
+      }
+
+      &__checkbox:not(checked) + label:before {
+        content: '';
+        position: absolute;
+        top: -4px;
+        left: 0;
+        width: 50px;
+        height: 26px;
+        border-radius: 4px;
+        background: #CDD1DA;      
+      }
+      &__checkbox:not(checked) + label:after {
+        content: '';
+        position: absolute;
+        top: -2px;
+        left: 2px;
+        width: 22px;
+        height: 22px;
+        border-radius: 4px;
+        background: #FFF;
+        transition: all .2s; 
+      }
+
+      &__checkbox:checked + label:before {
+        background: #9a8fb1;
+      }
+
+      &__checkbox:checked + label:after {
+        left: 26px;
+      }      
+}

@@ -1,0 +1,20 @@
+.galery{ 
+     padding-top:15%;
+
+    	&__static-row {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: space-around;
+        text-align: center;
+        }
+}
+
+
+#galery-ajax-row{            
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: space-around;
+    text-align: center;
+}

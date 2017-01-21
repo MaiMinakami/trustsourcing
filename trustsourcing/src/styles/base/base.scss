@@ -1,0 +1,24 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+p {
+	font-size:12px;
+}
+
+h3{
+	font-size:12px;
+}
+body{
+   background:url(../images/town_background.png)center center fixed no-repeat;
+	background-size:cover;
+}
+.content{min-width:320px;}
+
+
+button, 
+button:active, 
+button:focus {
+    outline: none;
+}
